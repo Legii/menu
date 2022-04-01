@@ -1,7 +1,11 @@
+
+body {
+font-size:1.2rem
+}
 .nav-link {
     color:dodgerblue !important;
 }
-
+nav:nth-child(1) {padding:20px;}
 #vertical-nav, #vertical-nav ul {
     max-width:200px;
     min-width:150px;
@@ -32,10 +36,6 @@
     display: flex;
 }
 
-.img {
-    height:50px;
-    background-color: khaki;
-}
 #vertical-nav ul li a::after {
     content:" \276F";
     color:white;
@@ -57,7 +57,7 @@
     outline: none;
     position: fixed;
     right:25px;
-    top:10px;
+    top:20px;
     transition: transform 0.5s;
 }
 
@@ -119,8 +119,10 @@
 }
 
 .vertical-toggler {
-    width:100%;
-    margin-right:20%;
+        max-width:200px;
+    min-width:150px;
+    width:calc(100vw / 3);
+  
     background-color: transparent;
     border:none;
     color:white;
