@@ -1,0 +1,160 @@
+.nav-link {
+    color:dodgerblue !important;
+}
+
+#vertical-nav, #vertical-nav ul {
+    max-width:200px;
+    min-width:150px;
+    width:calc(100vw / 3);
+}
+
+#vertical-nav ul {
+    padding:5%;
+}
+
+
+#vertical-nav ul li ul {
+    position: absolute;
+    top:0px;
+    left:100%;
+    display: none;
+    padding:calc(8px + 5%); 
+}
+#vertical-nav ul li ul li ul {
+    position: absolute;
+    top:0px;
+    left:100%;
+    display: none;
+    padding:calc(8px + 5%); 
+}
+
+#vertical-nav ul li:hover >ul {
+    display: flex;
+}
+
+.img {
+    height:50px;
+    background-color: khaki;
+}
+#vertical-nav ul li a::after {
+    content:" ►";
+    color:white;
+
+}
+#vertical-nav ul li a:only-child::after {
+    content:"";
+}
+
+.black {
+    background-color :#333333;
+}
+
+
+.navbar-toggler,.navbar-toggler:focus,.navbar-toggler:hover {
+    width:35px;
+    height:35px;
+    border:none;
+    outline: none;
+    position: fixed;
+    right:25px;
+    top:10px;
+    transition: transform 0.5s;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+    transform: rotate(-90deg);
+    transition: transform 1s;
+    
+}
+
+.navbar-toggler[aria-expanded="true"] .burgerline:nth-child(1) {
+    transform: rotate(-45deg);
+
+    top:50%
+}
+.navbar-toggler[aria-expanded="true"] .burgerline:nth-child(3) {
+    transform: rotate(45deg);
+
+    top:50%
+}
+
+.navbar-toggler[aria-expanded="true"] .burgerline:nth-child(2) {
+    opacity:0;
+    left:50%;
+    
+}
+
+.burgerline {
+    border-radius: 12%;
+    transform:rotate(0deg);
+    transition: transform 1s 0.5s, top 1s 0.5s, left 1s 0.5s, opacity 1s 0.5s;
+    width:35px;
+    height: 7px;
+    background-color: white;
+    display: block;
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin-left:none;
+}
+
+.burgerline:nth-child(1) {
+
+    top:0px;
+
+}
+.burgerline:nth-child(2) {
+    top:14px;
+}
+.burgerline:nth-child(3) {
+    top:28px;
+}
+
+.container {
+    text-align: center;
+}
+.blue {
+    color:dodgerblue;
+
+}
+
+.vertical-toggler {
+    width:100%;
+    margin-right:20%;
+    background-color: transparent;
+    border:none;
+    color:white;
+    background-color: black;
+}
+button.h >p {
+content=""
+}
+.h + nav{
+      display:none;
+    height:0px;
+}
+.h + nav > div {
+    display:none;
+    height:0px;
+}
+.h + nav > divul {
+    display:none;height:0px;
+}
+.h + nav > div ul li {
+    display:none;
+    height:0px;
+}
+.h {
+    
+    content="AAA"
+}
+.h:after {
+   content="Rozwiń";
+}
+
+h1 {
+position:absolute;
+    top:50%;
+    left:0px;
+    width:100%;
+}
