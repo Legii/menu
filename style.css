@@ -37,7 +37,7 @@
     background-color: khaki;
 }
 #vertical-nav ul li a::after {
-    content:" ►";
+    content:" \276F";
     color:white;
 
 }
