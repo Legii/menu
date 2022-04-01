@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nav</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-toggler-burger">
+            <span class="burgerline"></span>
+            <span class="burgerline"></span>
+            <span class="burgerline"></span>
+        </div>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Job</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+    </div>
+</nav>
+<button class="vertical-toggler h" type="button" id="btn" onclick="classtoggler()">Rozwiń ▼</button>
+<nav id="vertical-nav" class="navbar black navbar-dark flex-column" >
+ 
+
+     
+
+
+
+
+    <div id="verticalDiv">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Link 1<span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav  mr-auto flex-column black">
+                <li class="nav-item">
+                <a class="nav-link" href="">Link 1.1</a>
+                <ul class="navbar-nav  mr-auto flex-column black">
+                    <li class="nav-item"><a class="nav-link" href="">Link 1.1.1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Link 1.1.2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Link 1.1.3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Link 1.1.4</a></li>
+                </ul>
+            </li>
+                <li class="nav-item"><a class="nav-link" href="">Link 1.2</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Link 1.3</a>
+                <ul class="navbar-nav  mr-auto flex-column black">
+                    <li class="nav-item"><a class="nav-link" href="">Link 1.3.1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Link 1.3.2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Link 1.3.3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Link 1.3.4</a></li>
+                </ul>
+            </li>
+                <li class="nav-item"><a class="nav-link" href="">Link 1.4</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+            <ul class="navbar-nav  mr-auto flex-column black">
+                <li class="nav-item"><a class="nav-link" href="">Link 2.1</a>
+                    <ul class="navbar-nav  mr-auto flex-column black">
+                    <li class="nav-item"><a class="nav-link" href="">Link 2.1.1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Link 2.1.2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Link 2.1.3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Link 2.1.4</a></li>
+                </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="">Link 2.2</a>
+                    <ul class="navbar-nav  mr-auto flex-column black">
+                        <li class="nav-item"><a class="nav-link" href="">Link 2.2.1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Link 2.2.2</a></li>
+
+                    </ul>
+                    
+                </li>
+                <li class="nav-item"><a class="nav-link" href="">Link 2.3</a>
+                    <ul class="navbar-nav  mr-auto flex-column black">
+                        <li class="nav-item"><a class="nav-link" href="">Link 2.3.1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Link 2.3.2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Link 2.3.3</a></li>
+
+                    </ul>
+                </li>
+     
+            </ul>
+       
+     
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+            <ul class="navbar-nav  mr-auto flex-column black">
+                <li class="nav-item"><a class="nav-link" href="">Link 3.1</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Link 3.2</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Link 3.3</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Link 3.4</a>
+                    <ul class="navbar-nav  mr-auto flex-column black">
+                        <li class="nav-item"><a class="nav-link" href="">Link 3.4.1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Link 3.4.2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Link 3.4.3</a></li>
+              
+                    </ul>
+                
+                </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 4</a>
+          </li>
+  
+        </ul>
+
+    </div>
+    </nav>
+
+    <div class="container">
+        <h1>Witaj na stronie <span class="blue">BlueDesign</span></h1>
+
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      function classtoggler () {
+      const btn = document.getElementById("btn");
+        
+          if (btn.className=="vertical-toggler h")
+              {
+                btn.innerText="Zwiń ▲"
+              }
+          else {
+                      
+                btn.innerText="Rozwiń ▼"
+              
+          }
+            btn.classList.toggle("h")
+        
+      }
+    </script>
+  </body>
+</html>
